@@ -1,0 +1,202 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: url('/images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    flex: 1;
+    padding: 70px 20px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+.footer {
+    background-color: rgba(52, 58, 64, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    color: #f8f9fa;
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+.navbar {
+    background-color: rgba(52, 58, 64, 0.8);
+}
+
+.navbar a {
+    color: #ffffff !important;
+}
+
+.navbar a:hover {
+    color: #d3d3d3 !important;
+}
+
+.ds_btn,
+.btn {
+    background: linear-gradient(135deg, #ff0000, #000000);
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.ds_btn:hover {
+    background: linear-gradient(135deg, #ffffff, #ff0000);
+    color: #000000;
+    transform: scale(1.05);
+}
+
+
+.ds_btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+button:disabled,
+.ds_btn:disabled {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.ds_about-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.ds_about-title {
+    color: #007bff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ds_about-description {
+    color: #6c757d;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ds_about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ds_navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ds_navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.ds_form-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.ds_form-label {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 2px;
+}
+
+
+
+.ds_form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+}
+
+
+.mb-3 p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.mb-3 p .link a {
+    text-decoration: none;
+    color: white;
+}
+
+.mb-3 p .link a:hover {
+
+    color: #ff0000;
+    font-weight: 400;
+}
+
+.select_usertype {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 20px;
+}
+
+.time-slots-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.time-slot {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    padding: 10px 20px;
+    border: 0.5px solid rgb(175, 175, 175);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    flex: 0 0 calc(25% - 10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.time-slot:hover {
+    background-color: #ffffff;
+}
+
+.time-slot.disabled {
+    background-color: #cccccc;
+    color: #000000;
+    cursor: not-allowed;
+}
+
+.time-slot.active {
+    background: green;
+    color: white;
+}
